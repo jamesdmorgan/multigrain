@@ -15,7 +15,9 @@ The script uses ffmpeg to perform:
 
 See the [manual](https://intellijel.com/downloads/manuals/multigrain_manual_v1.2_2025.07.04.pdf) for audio requirements
 
-Original files are kept in a source directory
+* Original files are kept in a source directory
+* Ableton bounce and timestamps are removed
+* Whitespace is replaced with hyphens
 
 ```
 $ multigrain.sh
