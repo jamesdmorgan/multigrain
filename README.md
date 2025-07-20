@@ -1,10 +1,10 @@
 # multigrain
 
-Utility for managing samples on [Intellijel Multigrain](https://intellijel.com/shop/eurorack/multigrain/)
+Utility for preparing samples for [Intellijel Multigrain](https://intellijel.com/shop/eurorack/multigrain/)
 
 Run the script in the directory where you have samples you want to process ready for Multigrain
 
-The script uses ffmpeg to perform:
+The script uses **ffmpeg** to perform:
 
 1. 30Hz hipass filter to remove unwanted bottom end
 2. [normalisation](https://ffmpeg.org/ffmpeg-filters.html#dynaudnorm) default `dynaudnorm=f=100:g=15`
@@ -19,7 +19,7 @@ See the [manual](https://intellijel.com/downloads/manuals/multigrain_manual_v1.2
 * Ableton bounce and timestamps are removed
 * Whitespace is replaced with hyphens
 
-```
+```bash
 $ multigrain.sh
 
 Processing WAV files in: /Volumes/T7/Samples/Multigrain/Project01/01-start
@@ -79,7 +79,7 @@ Complete - originals in ./source, processed files renamed and cleaned
     └── 112-RING LOW2 (Bounce) [2025-07-20 131354].wav
 ```
 
-```
+```bash
  ffprobe -hide_banner  -show_streams 100-RING-BLD1.wav
 Input #0, wav, from '100-RING-BLD1.wav':
   Metadata:
