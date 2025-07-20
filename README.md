@@ -80,7 +80,7 @@ Complete - originals in ./source, processed files renamed and cleaned
 ```
 
 ```bash
- ffprobe -hide_banner  -show_streams 100-RING-BLD1.wav
+$ ffprobe -hide_banner  -show_streams 100-RING-BLD1.wav
 Input #0, wav, from '100-RING-BLD1.wav':
   Metadata:
     encoder         : Lavf61.7.100
