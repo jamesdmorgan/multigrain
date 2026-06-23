@@ -3,7 +3,7 @@ set -euo pipefail
 
 lowpass=${LOWPASS:-16000}
 hipass=${HIPASS:-30}
-norm=${NORM:-"f=100:g=15"}
+norm=${NORM:-"f=100:g=15:p=0.71"}
 noise=${NOISE:-"nf=-25"}
 
 filter="highpass=f=${hipass},dynaudnorm=${norm},afftdn=${noise},lowpass=f=${lowpass}"
